@@ -59,10 +59,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
     public void onBindViewHolder(@NonNull @NotNull ProductHolder holder, int position) {
         Product product = products.get(position);
         holder.name.setText(product.getName());
-        holder.caloric.setText(product.getCaloric().toString());
-        holder.carbohydrates.setText(product.getCarbohydrates().toString());
-        holder.proteins.setText(product.getProteins().toString());
-        holder.fats.setText(product.getFats().toString());
+        // holder.caloric.setText(product.getCaloric().toString());
+        // holder.carbohydrates.setText(product.getCarbohydrates().toString());
+        // holder.proteins.setText(product.getProteins().toString());
+        // holder.fats.setText(product.getFats().toString());
 
         holder.name.setOnClickListener(new View.OnClickListener() {
             @Override
