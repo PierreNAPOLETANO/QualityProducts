@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,13 +14,17 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.qualityproducts.R;
 import com.example.qualityproducts.activity.MainActivity;
 import com.example.qualityproducts.activity.ProductActivity;
 import com.example.qualityproducts.dao.ProductDao;
+import com.example.qualityproducts.databinding.ActivityProductBinding;
+import com.example.qualityproducts.manager.ProductManager;
 import com.example.qualityproducts.model.Product;
+import com.example.qualityproducts.utils.ActivityUtils;
 
 import java.util.ArrayList;
 
@@ -32,9 +37,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductHolder> {
+    private AppCompatActivity activity;
     private List<Product> products;
-    public ProductAdapter(List<Product> products) {
+
+    public ProductAdapter(AppCompatActivity activity, List<Product> products)
+    {
         this.products = products;
+        this.activity = activity;
     }
 
     @NonNull
@@ -55,15 +64,14 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
         holder.proteins.setText(product.getProteins().toString());
         holder.fats.setText(product.getFats().toString());
 
-       /* binding.productName.setOnClickListener(new View.OnClickListener() {
+        holder.name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ProductActivity.class);
-                startActivity(intent);
+                ProductManager.getInstance().setProduct(product);
+                ActivityUtils.launchActivity(activity, ProductActivity.class, false, true);
+                activity.finishAffinity();
             }
-        });*/
-
-
+        });
     }
 
     @Override
@@ -73,6 +81,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
 
 
     class ProductHolder extends RecyclerView.ViewHolder {
+        public LinearLayout container;
         public TextView name;
         public TextView caloric;
         public TextView carbohydrates;

@@ -14,7 +14,6 @@ import android.widget.TextView;
 import com.example.qualityproducts.R;
 import com.example.qualityproducts.adapter.ProductAdapter;
 import com.example.qualityproducts.dao.AppDatabase;
-import com.example.qualityproducts.databinding.ActivityLoginBinding;
 import com.example.qualityproducts.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         binding.productRecycler.setLayoutManager(new LinearLayoutManager(this));
-        binding.productRecycler.setAdapter(new ProductAdapter(AppDatabase.getDatabase(this).productDao().getAllProducts()));
+        binding.productRecycler.setAdapter(new ProductAdapter(this, AppDatabase.getDatabase(this).productDao().getAllProducts()));
 
         binding.addProduct.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +35,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }
