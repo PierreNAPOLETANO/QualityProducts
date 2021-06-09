@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/register_title"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/register_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/register_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register_prompt_firstname"/>
+
+        <EditText
+            android:id="@+id/register_firstname_input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_placeholder_firstname"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/register_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register_prompt_lastname"/>
+
+        <EditText
+            android:id="@+id/register_lastname_input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/register_placeholder_lastname"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/register_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register_prompt_zipcode"/>
+
+        <EditText
+            android:id="@+id/register_address_input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/register_placeholder_address"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/register_zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register_prompt_zipcode"/>
+
+        <EditText
+            android:id="@+id/register_zipcode_input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/register_placeholder_zipcode"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/register_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register_prompt_city"/>
+
+        <EditText
+            android:id="@+id/register_city_input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/register_placeholder_city"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/register_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register_prompt_email"/>
+
+        <EditText
+            android:id="@+id/register_email_input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/register_placeholder_email"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register_prompt_password"/>
+
+        <EditText
+            android:id="@+id/register_password_input"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:hint="@string/register_placeholder_password" />
+
+        <Button
+            android:id="@+id/register_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/register_action_sign_up"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</layout>

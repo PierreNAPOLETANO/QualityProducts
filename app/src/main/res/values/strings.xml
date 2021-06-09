@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">QualityProducts</string>
+
+    <!-- Main Activity -->
+    <string name="search_producers_products">Producteur - Catégorie de produits</string>
+
+    <!-- Producer Activity -->
+    <string name="producer_title">Profil</string>
+    <string name="producer_firstname">Prénom</string>
+    <string name="producer_lastname">Nom</string>
+    <string name="producer_address">Addresse</string>
+    <string name="producer_products_sells">Produits proposés</string>
+
+    <!-- Product Activity -->
+    <string name="product_title">Produit</string>
+    <string name="product_caloric_value">Valeur calorique</string>
+    <string name="product_carbohydrates">Glucides</string>
+    <string name="product_proteins">Protéines</string>
+    <string name="product_fats">Lipides</string>
+    <string name="product_add">Permet d\'ajouter un produit</string>
+
+    <!-- Login Activity -->
+    <string name="login_title">Se Connecter</string>
+    <string name="login_prompt_email">Email</string>
+    <string name="login_prompt_password">Mot de passe</string>
+    <string name="login_action_sign_in">Se Connecter ou S\'inscrire</string>
+    <string name="login_action_sign_in_short">Se Connecter</string>
+    <string name="login_welcome">Bienvenue</string>
+    <string name="login_invalid_username">Nom d\'utilisateur invalide</string>
+    <string name="login_invalid_password">Mot de passe invalid (> à 5 caractères)</string>
+    <string name="login_login_failed">La connexion a échoué</string>
+    <string name="login_placeholder_email">Saisissez votre adresse email</string>
+    <string name="login_placeholder_password">Saisissez mot de passe</string>
+
+    <!-- Register Activity -->
+    <string name="register_title">Inscription</string>
+    <string name="register_prompt_firstname">Prénom</string>
+    <string name="register_placeholder_firstname">John</string>
+    <string name="register_prompt_lastname">Nom</string>
+    <string name="register_placeholder_lastname">DOE</string>
+    <string name="register_prompt_address"></string>
+    <string name="register_placeholder_address">1 rue du pont</string>
+    <string name="register_prompt_zipcode">Code postal</string>
+    <string name="register_placeholder_zipcode">74000</string>
+    <string name="register_prompt_city">Ville</string>
+    <string name="register_placeholder_city">Annecy</string>
+    <string name="register_prompt_email">Adresse email</string>
+    <string name="register_placeholder_email">john.doe@azerty.com</string>
+    <string name="register_prompt_password">Mot de passe</string>
+    <string name="register_placeholder_password">*****</string>
+    <string name="register_action_sign_up">S\'inscrire</string>
+
+    <!-- Add Producer Activity -->
+    <string name="add_producer_image">Image du producteur</string>
+    <string name="add_producer_firstname">Prénom du producteur</string>
+    <string name="add_producer_firstname_input">Prénom du producteur</string>
+    <string name="add_producer_lastname">Nom du producteur</string>
+    <string name="add_producer_lastname_input">Nom du producteur</string>
+    <string name="add_producer_address">Adresse du producteur</string>
+    <string name="add_producer_address_input">Adresse du producteur</string>
+    <string name="add_producer_product_list">Liste de produits à proposés</string>
+    <string name="add_producer_product_list_input">Liste de produits à proposés</string>
+    <string name="add_producer_submit">Ajouter</string>
+
+    <!-- Add Product Activity -->
+    <string name="add_product_title">Produit</string>
+    <string name="add_product_image">Image du produit %s</string>
+    <string name="add_product_name_value">Nom du produit</string>
+    <string name="add_product_caloric">Valeur calorique</string>
+    <string name="add_product_carbohydrates">Glucides</string>
+    <string name="add_product_proteins">Protéines</string>
+    <string name="add_product_fats">Lipides</string>
+    <string name="add_product_submit">Ajouter un produit</string>
+</resources>

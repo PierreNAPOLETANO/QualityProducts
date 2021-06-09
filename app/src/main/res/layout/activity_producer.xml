@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="activity.ProducerActivity">
+
+        <ImageView
+            android:id="@+id/img_producer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:contentDescription="Producer Image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_producer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/producer_title"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                android:id="@+id/text_producer_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producer_firstname"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                android:id="@+id/text_producer_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producer_lastname"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                android:id="@+id/text_producer_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producer_address"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                android:id="@+id/text_producer_products_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producer_products_sells"/>
+
+            <ImageButton
+                android:id="@+id/add_producer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/product_add"
+                android:src="@android:drawable/btn_plus"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/add_product_name"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_product_name_value"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/add_product_name_input"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+            android:id="@+id/add_product_caloric"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_product_caloric"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/add_product_caloric_input"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+            android:id="@+id/add_product_carbohydrates"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_product_carbohydrates"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/add_product_carbohydrates_input"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_product_carbohydrates"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/add_product_proteins"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_product_proteins"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/add_product_proteins_input"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_product_proteins"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/add_product_fats"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_product_fats"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/add_product_fats_input"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_product_fats"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/add_product_submit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_product_submit" />
+    </LinearLayout>
+</layout>

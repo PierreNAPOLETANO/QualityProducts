@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/add_producer_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/add_producer_image"/>
+
+        <TextView
+            android:id="@+id/add_producer_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/add_producer_firstname"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/add_producer_firstname_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_producer_firstname_input"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/add_producer_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_producer_lastname"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/add_producer_lastname_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_producer_lastname_input"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/add_producer_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_producer_address"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/add_producer_address_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_producer_address_input"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/add_producer_product_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_producer_product_list"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/add_producer_product_list_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_producer_product_list_input"
+            android:layout_marginBottom="50dp"/>
+
+        <Button
+            android:id="@+id/add_producer_submit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_producer_submit" />
+    </LinearLayout>
+</layout>
