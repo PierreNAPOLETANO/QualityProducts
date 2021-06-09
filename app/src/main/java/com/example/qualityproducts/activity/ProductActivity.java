@@ -19,12 +19,6 @@ import com.example.qualityproducts.model.Product;
 
 public class ProductActivity extends AppCompatActivity {
 
-    private String name          = ProductManager.getInstance().getProduct().getName();
-    private Double caloric       = ProductManager.getInstance().getProduct().getCaloric();
-    private Double carbohydrates = ProductManager.getInstance().getProduct().getCarbohydrates();
-    private Double proteins      = ProductManager.getInstance().getProduct().getProteins();
-    private Double fats          = ProductManager.getInstance().getProduct().getFats();
-
     private ActivityProductBinding binding;
 
     @Override
@@ -59,5 +53,13 @@ public class ProductActivity extends AppCompatActivity {
         binding.productCarbohydrates.setText(String.valueOf(theProduct.getCarbohydrates()));
         binding.productFats.setText(String.valueOf(theProduct.getFats()));
         binding.productProteins.setText(String.valueOf(theProduct.getProteins()));
+
+        binding.productRedirect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProductActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
