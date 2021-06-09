@@ -68,7 +68,13 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
             @Override
             public void onClick(View v) {
                 ProductManager.getInstance().setProduct(product);
-                ActivityUtils.launchActivity(activity, ProductActivity.class, false, true);
+                Intent intent = new Intent(activity, ProductActivity.class);
+                intent.putExtra("name", product.getName());
+                intent.putExtra("caloric", product.getCaloric());
+                intent.putExtra("carbonhydrates", product.getCarbohydrates());
+                intent.putExtra("protein", product.getProteins());
+                intent.putExtra("fat", product.getFats());
+                ActivityUtils.launchActivity(activity, intent, false, true);
                 activity.finishAffinity();
             }
         });

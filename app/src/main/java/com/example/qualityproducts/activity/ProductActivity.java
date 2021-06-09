@@ -36,5 +36,28 @@ public class ProductActivity extends AppCompatActivity {
                 .getStringExtra("productName"));
 
         // binding.productCaloric.setText(String.valueOf(product.getCaloric()));
+        String name;
+        String caloric;
+        String carbonhydrate;
+        String protein;
+        String fat;
+
+        if (savedInstanceState == null) {
+            Bundle extras = getIntent().getExtras();
+            if(extras == null) {
+                name = null;
+            } else {
+                name = extras.getString("name");
+            }
+        } else {
+            name = (String) savedInstanceState.getSerializable("name");
+        }
+
+        Product theProduct = AppDatabase.getDatabase(this).productDao().getProduct(name);
+        binding.productName.setText(theProduct.getName());
+        binding.productCaloric.setText(String.valueOf(theProduct.getCaloric()));
+        binding.productCarbohydrates.setText(String.valueOf(theProduct.getCarbohydrates()));
+        binding.productFats.setText(String.valueOf(theProduct.getFats()));
+        binding.productProteins.setText(String.valueOf(theProduct.getProteins()));
     }
 }
